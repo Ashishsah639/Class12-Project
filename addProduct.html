@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product</title>
+    <link rel="stylesheet" href="./Css/addProduct.css" type="text/css">
+</head>
+<body>
+    <div class="addProductPage">
+        
+        <div id="addpd">
+            <table>
+                <caption>Add A New Product !</caption>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="image">Image URL:</label></td>
+                    <td><input type="text" id="image" name="image" required></td>
+                </tr>
+                <tr>
+                    <td><label for="description">Description:</label></td>
+                    <td><textarea id="description" name="description" required></textarea></td>
+                </tr>
+                <tr>
+                    <td onclick="alert('Product Added !')"><input type="submit" value="Add Product" onclick="addProduct()"></td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+    <script src="./addProduct.js" type="text/javascript"></script>
+</body>
+</html>
