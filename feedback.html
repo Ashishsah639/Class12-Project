@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit a Recipe</title>
-    <link rel="stylesheet" href="" type="text/css">
+    <link rel="stylesheet" href="./Css/feedback.css" type="text/css">
 </head>
 <body>
-    <h2>Submit Your Recipe</h2>
-    <form action="./submit.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" placeholder="example@yourdomain.com" id="email" name="email" required><br><br>
-        
-        <label for="recipe">Your Recipe:</label><br>
-        <textarea id="recipe" name="recipe" rows="5" required></textarea><br><br>
+    <div class="feedbackpage">
 
-        <button type="submit">Submit</button>
-    </form>
+        <div id="addpd">
+
+            <form action="./submit.php" method="POST">
+                <h2>Submit Your Recipe</h2><br>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" placeholder="example@yourdomain.com" id="email" name="email" required><br><br>
+                
+                <label for="recipe">Your Recipe:</label><br>
+                <textarea id="recipe" name="recipe" rows="5" required></textarea><br>
+
+                <button type="submit" style="margin-left: 70px;">Submit</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
